@@ -30,6 +30,15 @@
     "http://instagram.com/guestros",
     "http://plus.google.com/116424497282893876716"</div>
 </div>
+        
+        <!-- For google shortcuts -->
+        <ul itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+  <li itemprop="name"><a itemprop="url" href="http://www.webconsulting-graz.com">Home</a></li>
+  <li itemprop="name"><a itemprop="url" href="http://www.webconsulting-graz.com#features">Features</a></li>
+  <li itemprop="name"><a itemprop="url" href="http://www.webconsulting-graz.com#works">Portfolio</a></li>
+  <li itemprop="name"><a itemprop="url" href="http://www.webconsulting-graz.com#team">Team</a></li>
+  <li itemprop="name"><a itemprop="url" href="http://www.webconsulting-graz.com#contact">Contact</a></li>
+</ul>
 		<!-- Mobile Specific Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		
@@ -524,9 +533,63 @@
 					<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 wow fadeInLeft animated" data-wow-duration="500ms">
 						<div class="contact-address">
 							<h3>Justin Güse Webdesign</h3>
+                            <h4>Tax number</h4>
+                            <p>Germany - Kleinunternehmen</p>
+                            <p>5313/5130/1856</p>
+                            <br/>
+                            <h4>Company address</h4>
 							<p>Steinkuhlenstraße 8,</p>
 							<p>Bad Salzuflen, Germany.</p>
 							<p>+43 681 10604392</p>
+                            <br/>
+                            <h4>Current location</h4>
+                            <p>Moserhofgasse 20/19</p>
+							<p>Graz, Austria.</p>
+							<p>+43 681 10604392</p>
+                            <!-- Structured data -->
+                           <script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "ProfessionalService",
+  "@id": "http://www.webconsulting-graz.com",
+  "name": "WebConsulting Graz",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Moserhofgasse 20/19",
+    "addressLocality": "Graz",
+    "addressRegion": "Steyr",
+    "postalCode": "8010",
+    "addressCountry": "Austria"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 47.061536700000005,
+    "longitude": 15.456615599999997
+  },
+  "url": "http://www.webconsulting-graz.com",
+  "logo": "http://justinguese.com/images/Optimized-pic.jpg",
+  "telephone": "+4368110604392",
+   "sameAs" : [
+    "http://www.facebook.com/justinguesewebdesign"
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ],
+      "opens": "00:00",
+      "closes": "23:59"
+    }
+  ]
+}
+</script>
 						</div>
 					</div>
 					<!-- end contact address -->
@@ -535,17 +598,17 @@
 					<div class="col-lg-8 col-md-8 col-sm-7 col-xs-12 wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="300ms">
 						<div class="contact-form">
 							<h3>Say hello!</h3>
-							<form action="#" id="contact-form">
+							<form action="//formspree.io/guese.justin@gmail.com" target="_blank" id="contact-form" method="POST">
 								<div class="input-group name-email">
 									<div class="input-field">
-										<input type="text" name="name" id="name" placeholder="Name" class="form-control">
+										 <input type="text" placeholder="name" name="name">
 									</div>
 									<div class="input-field">
-										<input type="email" name="email" id="email" placeholder="Email" class="form-control">
+										<input type="email" name="_replyto" id="email" placeholder="Email" class="form-control">
 									</div>
 								</div>
 								<div class="input-group">
-									<textarea name="message" id="message" placeholder="Message" class="form-control"></textarea>
+									<textarea name="body" id="message" placeholder="Message" class="form-control"></textarea>
 								</div>
 								<div class="input-group">
 									<input type="submit" id="form-submit" class="pull-right" value="Send message">
@@ -587,18 +650,13 @@
 					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms">
 						<div class="footer-single">
 							<img src="img/footer-logo.png" alt="">
-							<p>eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							<p>Justin Güse Webdesign. Making the Web better.</p>
 						</div>
 					</div>
 				
 					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
 						<div class="footer-single">
-							<h6>Subscribe </h6>
-							<form action="#" class="subscribe">
-								<input type="text" name="subscribe" id="subscribe">
-								<input type="submit" value="&#8594;" id="subs">
-							</form>
-							<p>eusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+							
 						</div>
 					</div>
 				
@@ -607,9 +665,6 @@
 							<h6>Explore</h6>
 							<ul>
 								<li><a href="#">Inside Us</a></li>
-								<li><a href="#">Flickr</a></li>
-								<li><a href="#">Google</a></li>
-								<li><a href="#">Forum</a></li>
 							</ul>
 						</div>
 					</div>
@@ -618,10 +673,7 @@
 						<div class="footer-single">
 							<h6>Support</h6>
 							<ul>
-								<li><a href="#">Contact Us</a></li>
-								<li><a href="#">Market Blog</a></li>
-								<li><a href="#">Help Center</a></li>
-								<li><a href="#">Pressroom</a></li>
+								<li><a href="#contact">Contact Us</a></li>
 							</ul>
 						</div>
 					</div>
@@ -630,7 +682,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						<p class="copyright text-center">
-							Copyright © 2015 <a href="http://themefisher.com/">Themefisher</a>. All rights reserved. Designed & developed by <a href="http://themefisher.com/">Themefisher</a>
+							Copyright © 2016 by Justin Güse.</a>
 						</p>
 					</div>
 				</div>
@@ -680,61 +732,5 @@
 		<!-- Custom Functions -->
         <script src="js/custom.js"></script>
 		
-		<script type="text/javascript">
-			$(function(){
-				/* ========================================================================= */
-				/*	Contact Form
-				/* ========================================================================= */
-				
-				$('#contact-form').validate({
-					rules: {
-						name: {
-							required: true,
-							minlength: 2
-						},
-						email: {
-							required: true,
-							email: true
-						},
-						message: {
-							required: true
-						}
-					},
-					messages: {
-						name: {
-							required: "come on, you have a name don't you?",
-							minlength: "your name must consist of at least 2 characters"
-						},
-						email: {
-							required: "no email, no message"
-						},
-						message: {
-							required: "um...yea, you have to write something to send this form.",
-							minlength: "thats all? really?"
-						}
-					},
-					submitHandler: function(form) {
-						$(form).ajaxSubmit({
-							type:"POST",
-							data: $(form).serialize(),
-							url:"process.php",
-							success: function() {
-								$('#contact-form :input').attr('disabled', 'disabled');
-								$('#contact-form').fadeTo( "slow", 0.15, function() {
-									$(this).find(':input').attr('disabled', 'disabled');
-									$(this).find('label').css('cursor','default');
-									$('#success').fadeIn();
-								});
-							},
-							error: function() {
-								$('#contact-form').fadeTo( "slow", 0.15, function() {
-									$('#error').fadeIn();
-								});
-							}
-						});
-					}
-				});
-			});
-		</script>
     </body>
 </html>
