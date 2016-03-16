@@ -1,0 +1,44 @@
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="http://justinguese.com/assets/js/jquery.reel.js"></script>
+<link rel="stylesheet" href="https://cdn.pannellum.org/2.2/pannellum.css"/>
+    <script type="text/javascript" src="https://cdn.pannellum.org/2.2/pannellum.js"></script>
+    <style>
+    #panorama {
+        width: 600px;
+        height: 400px;
+    }
+    </style>
+</head>
+<body>
+<form action="../index.html#works">
+    <input type="submit" value="Back to Webconsulting Graz">
+</form>
+<h1>360 Panoramas</h1>
+I can provide both the camera equipment to take those pictures as well as the players to showcase your products. <a href="../index.html#contact">Contact me for further information.</a>
+<h2>Object 360 Panoramas</h2>
+    Drag and see what happens!
+    <img src="http://justinguese.com/images/shoe/ipod.jpg" width="350" height="207"
+      class="reel"
+      id="image"
+      data-images="http://justinguese.com/images/shoe/ipod_#.jpg|1..72">
+    
+<h2>External 360 Panoramas</h2>
+    
+<h3>Inside (Virtual Tour)</h3>
+    
+<div id="panorama"></div>
+<script>
+pannellum.viewer('panorama', {
+    "type": "equirectangular",
+    "panorama": "http://justinguese.com/images/shoe/final.jpg",
+    "haov": 365,
+    "vaov": 54.15,
+    "vOffset": 1.17,
+    "autoLoad": true
+});
+    </script>
+<h3>Outside (Landscape)</h3>
+    
+<iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://cdn.pannellum.org/2.2/pannellum.htm?panorama=https://pannellum.org/images/alma.jpg"></iframe>
+</body>
