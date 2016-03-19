@@ -1,6 +1,12 @@
 <head>
+    <script>
+(function(s,i,r,v) {
+    v = i.createElement(r); v.async=1;
+    v.src = ('file:'==location.protocol?'http:':'') + '//scripts.sirv.com/sirv.js';
+    i.getElementsByTagName(r)[0].parentNode.appendChild(v);
+})(window, document, 'script');
+</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-<script src="http://justinguese.com/assets/js/jquery.reel.js"></script>
 <link rel="stylesheet" href="https://cdn.pannellum.org/2.2/pannellum.css"/>
     <script type="text/javascript" src="https://cdn.pannellum.org/2.2/pannellum.js"></script>
     <style>
@@ -11,17 +17,19 @@
     </style>
 </head>
 <body>
-<form action="../index.html#works">
-    <input type="submit" value="Back to Webconsulting Graz">
+<form action="http://justinguese.com/webconsulting-graz#works">
+    <input type="submit" value="EN Back to Webconsulting Graz">
+</form>
+<form action="http://justinguese.com/webconsulting-graz/de.html#works">
+    <input type="submit" value="DE Zurück zu Webconsulting Graz">
 </form>
 <h1>360 Panoramas</h1>
-I can provide both the camera equipment to take those pictures as well as the players to showcase your products. <a href="../index.html#contact">Contact me for further information.</a>
+<p>English: I can provide both the camera equipment to take those pictures as well as the players to showcase your products. <a href="http://justinguese.com/webconsulting-graz#contact">Contact me for further information.</a></p>
+<p>German: Ich kann sowohl das Kamera-Equipment als auch die Webplayer für diese Produkte stellen.  <a href="http://justinguese.com/webconsulting-graz/de.html#contact">Kontaktieren Sie mich für weitere Informationen.</a></p>
 <h2>Object 360 Panoramas</h2>
     Drag and see what happens!
-    <img src="http://justinguese.com/images/shoe/ipod.jpg" width="350" height="207"
-      class="reel"
-      id="image"
-      data-images="http://justinguese.com/images/shoe/ipod_#.jpg|1..72">
+    Ziehen Sie und sehen Sie was passiert!
+  <div width="276" height="200" class="Sirv" data-src="//sertypor.sirv.com/Shared/Examples/drill/drill.spin"></div>
     
 <h2>External 360 Panoramas</h2>
     
@@ -31,7 +39,7 @@ I can provide both the camera equipment to take those pictures as well as the pl
 <script>
 pannellum.viewer('panorama', {
     "type": "equirectangular",
-    "panorama": "http://justinguese.com/images/shoe/final.jpg",
+    "panorama": "http://justinguese.com/images/shoe/carfinal.jpg",
     "haov": 365,
     "vaov": 54.15,
     "vOffset": 1.17,
